@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guestarticles",
+  "info": {
+    "name": "guestarticle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "guesttitle": {
+      "type": "string"
+    },
+    "guestbanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "guestdate": {
+      "type": "date"
+    },
+    "guestcontent": {
+      "type": "richtext"
+    },
+    "guestname": {
+      "type": "string"
+    },
+    "guestkeywords": {
+      "type": "string"
+    }
+  }
+}
