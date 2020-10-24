@@ -2,14 +2,17 @@ module.exports = ({ env }) => ({
   defaultConnection: "default",
   connections: {
     default: {
-      connector: "mongoose",
+      connector: "bookshelf",
       settings: {
-        uri: "mongodb+srv://Betik2Database:Btkblg2020@cluster0.c6vfg.mongodb.net/Betik2?retryWrites=true&w=majority",
-        database: "Betik2",
+        client: "postgres",
+        host: "ec2-54-246-87-132.eu-west-1.compute.amazonaws.com",
+        port: "5432",
+        database: "da6uisp1rras4t",
+        username: "vypfqrngmolare",
+        password: "4b4dd3c72158729fdf651142367e70def451c0a64e41ac0370cd221e2a8808c1",
+        ssl: { rejectUnauthorized: false },
       },
-      options: {
-        ssl: true,
-      },
+      options: {},
     },
   },
 });
