@@ -6,6 +6,7 @@ module.exports = ({ env }) => ({
       settings: {
         client: "postgres",
         host: "ec2-54-246-87-132.eu-west-1.compute.amazonaws.com",
+        port: "5432",
         database: "da6uisp1rras4t",
         username: "vypfqrngmolare",
         password: "4b4dd3c72158729fdf651142367e70def451c0a64e41ac0370cd221e2a8808c1",
